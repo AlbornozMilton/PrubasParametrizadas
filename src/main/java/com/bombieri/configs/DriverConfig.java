@@ -7,6 +7,10 @@ public class DriverConfig {
 	String url = System.getProperty("url");
 	String browser = System.getProperty("browser");
 	
+	public DriverConfig() {
+		
+	}
+	
 	public String getUrl() {
 		return url;
 	}
