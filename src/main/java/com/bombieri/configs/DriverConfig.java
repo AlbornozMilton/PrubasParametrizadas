@@ -26,7 +26,7 @@ public class DriverConfig {
 			driver = new ChromeDriver();
 		}
 		if (this.browser.equals("firefox")) {
-			System.getProperties().setProperty("geckodriver.firefox.driver", "C:\\Users\\Bombieri5\\Downloads\\Instaladores\\firefoxdriver-win32_55\\geckodriver.exe" );
+			System.getProperties().setProperty("webdriver.gecko.driver", "C:\\Users\\Bombieri5\\Downloads\\Instaladores\\firefoxdriver-win32_55\\geckodriver.exe" );
 			driver = new FirefoxDriver();
 		}
 		return driver;
