@@ -13,9 +13,10 @@ import org.testng.annotations.AfterTest;
 public class FacebookPageAccessTest {
 	
 	private DriverConfig dConfig = new DriverConfig();
-	private WebDriver driver = dConfig.getDriver();
+	private WebDriver driver;
+	private String url = dConfig.getUrl();
 	
-	/*@Test	
+	@Test	
 	public void f() throws InterruptedException {
 		driver.get(dConfig.getUrl());
 		//driver.findElement(By.name("q")).sendKeys("facebook");
@@ -31,5 +32,4 @@ public class FacebookPageAccessTest {
 	public void afterTest() {
 		driver.quit();
 	}
-*/
 }
