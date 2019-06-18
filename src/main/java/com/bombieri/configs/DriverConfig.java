@@ -22,11 +22,11 @@ public class DriverConfig {
 	public WebDriver getDriver() {
 		WebDriver driver = null;
 		if (this.browser.equals("chrome")) {
-			System.getProperties().setProperty("webdriver.chrome.driver", "C:\\Users\\Bombieri5\\Downloads\\Instaladores\\chromedriver_win32_75\\chromedriver.exe");
+			System.getProperties().setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		if (this.browser.equals("firefox")) {
-			System.getProperties().setProperty("webdriver.gecko.driver", "C:\\Users\\Bombieri5\\Downloads\\Instaladores\\firefoxdriver-win32_55\\geckodriver.exe" );
+			System.getProperties().setProperty("webdriver.gecko.driver", "src\\test\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		return driver;
