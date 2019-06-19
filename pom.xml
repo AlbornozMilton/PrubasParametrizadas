@@ -41,10 +41,6 @@
     				<browserValue>${browser}</browserValue>
    			
     			</systemPropertyVariables>
-    			
-     			<suiteXmlFiles>
-     			 <suiteXmlFile>${test}</suiteXmlFile>
-     			</suiteXmlFiles>
     		</configuration>
    		</plugin>
   </plugins>
