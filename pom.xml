@@ -38,12 +38,11 @@
     		
     			<systemPropertyVariables>
     				<urlValue>${url}</urlValue>
-    				<browserValue>${browser}</browserValue>
-    				<xmlfile>${test}</xmlfile>    			
+    				<browserValue>${browser}</browserValue>   			
     			</systemPropertyVariables>
     			
      			<suiteXmlFiles>
-     			 <suiteXmlFile>${xmlfile}</suiteXmlFile>
+     			 <suiteXmlFile>${test}</suiteXmlFile>
      			</suiteXmlFiles>
     		</configuration>
    		</plugin>

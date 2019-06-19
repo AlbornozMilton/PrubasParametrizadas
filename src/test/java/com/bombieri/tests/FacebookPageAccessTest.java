@@ -6,6 +6,7 @@ import com.bombieri.configs.DriverConfig;
 
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -19,8 +20,8 @@ public class FacebookPageAccessTest {
 	@Test	
 	public void f() throws InterruptedException {
 		driver.get(dConfig.getUrl());
-		//driver.findElement(By.name("q")).sendKeys("facebook");
-		//driver.findElement(By.name("btnK")).click();
+		driver.findElement(By.name("q")).sendKeys("facebook");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 	}
   
 	@BeforeTest
