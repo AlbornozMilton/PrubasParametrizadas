@@ -42,7 +42,7 @@
     			</systemPropertyVariables>
     			
      			<suiteXmlFiles>
-     			 <suiteXmlFile>${test}.xml</suiteXmlFile>
+     			 <suiteXmlFile>${test}</suiteXmlFile>
      			</suiteXmlFiles>
     		</configuration>
    		</plugin>
