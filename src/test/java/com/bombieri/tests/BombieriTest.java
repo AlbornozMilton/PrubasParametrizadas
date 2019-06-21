@@ -27,9 +27,9 @@ public class BombieriTest {
 		  WebDriverWait wait = new WebDriverWait(driver,10);
 		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='rso']/div[1]/div/div/div/div/div[1]/a")));
 		  driver.findElement(By.xpath("//*[@id='rso']/div[1]/div/div/div/div/div[1]/a")).click();
-		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'#')]")));
+		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href,'#')]")));
 		  driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
-		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")));
+		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")));
 		  driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
 	}
   
