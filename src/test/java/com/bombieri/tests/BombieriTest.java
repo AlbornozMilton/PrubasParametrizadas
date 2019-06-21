@@ -29,6 +29,7 @@ public class BombieriTest {
 		  driver.findElement(By.xpath("//*[@id='rso']/div[1]/div/div/div/div/div[1]/a")).click();
 		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'#')]")));
 		  driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
+		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")));
 		  driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
 	}
   
