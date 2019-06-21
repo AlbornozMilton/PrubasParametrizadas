@@ -24,9 +24,10 @@ public class BombieriTest {
 		  driver.findElement(By.name("q")).sendKeys("bombieri software");
 		  driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		  
-		  WebDriverWait wait = new WebDriverWait(driver,120);
+		  WebDriverWait wait = new WebDriverWait(driver,10);
 		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='rso']/div[1]/div/div/div/div/div[1]/a")));
 		  driver.findElement(By.xpath("//*[@id='rso']/div[1]/div/div/div/div/div[1]/a")).click();
+		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'#')]")));
 		  driver.findElement(By.xpath("//a[contains(@href,'#')]")).click();
 		  driver.findElement(By.xpath("//a[contains(@href,'https://www.bombieri.com.ar/b/consulting')]")).click();
 	}
